@@ -1,20 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <categories-item 
+    title="Обязательные для трудоустройства" 
+    suptitle="Документы, без которых невозможно трудоустройство человека на какую бы то ни было должность в компании вне зависимости от гражданина"
+  />
+  <categories-item />
+  <categories-item />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import СategoriesItem from './components/СategoriesItem.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'categories-item': СategoriesItem
   }
 }
 </script>
 
-<style>
+<style sccoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
